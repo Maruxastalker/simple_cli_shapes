@@ -1,5 +1,4 @@
-# cli.py
-from storage import ShapeStorage  # если у тебя другой путь/пакет – подправь импорт
+from storage import ShapeStorage
 
 HELP_TEXT = """
 Доступные команды:
@@ -73,7 +72,6 @@ def main():
                 print(f"Фигура с id={id_} не найдена.")
             continue
 
-        # Команды для фигур
 
         if cmd == "point":
             nums = parse_floats(args, 2)

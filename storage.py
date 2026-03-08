@@ -4,7 +4,7 @@ from shapes import Point, Segment, Circle, Square
 class ShapeStorage:
     def __init__(self):
         self._next_id = 1
-        self._shapes = {}  # id -> объект фигуры
+        self._shapes = {}
 
     def _get_next_id(self) -> int:
         id_ = self._next_id
